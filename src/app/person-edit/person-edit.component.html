@@ -1,0 +1,47 @@
+<div class="form-group">
+  <form>
+    <h4>Atualizar Pessoa</h4>
+    <hr />
+
+    <div class="container">
+      <div class="mb-3 row">
+        <label for="namePerson" class="col-sm-4 col-form-label">Nome</label>
+        <div class="col-sm-6">
+          <input type="text" class="form-control" id="namePerson" [(ngModel)]="person.name" name="name">
+        </div>
+      </div>
+      <div class="mb-3 row">
+        <label for="lastName" class="col-sm-4 col-form-label">Sobrenome</label>
+        <div class="col-sm-6">
+          <input type="text" class="form-control" id="lastName" [(ngModel)]="person.lastName" name="lastName">
+        </div>
+      </div>
+  
+      <div class="mb-3 row">
+        <label for="cpf" class="col-sm-4 col-form-label">CPF</label>
+        <div class="col-sm-6">
+          <input type="text" class="form-control" id="birthDate" [(ngModel)]="person.cpf" name="cpf">
+        </div>
+      </div>
+  
+      <div class="mb-3 row">
+        <label for="email" class="col-sm-4 col-form-label">E-mail</label>
+        <div class="col-sm-6">
+          <input type="text" class="form-control" id="matriculation" [(ngModel)]="person.email" name="email">
+        </div>
+      </div>
+  
+      <div class="mb-3 row">
+        <label for="address" class="col-sm-4 col-form-label">Endereço</label>
+        <div class="col-sm-6">
+          <input type="text" class="form-control" id="document" [(ngModel)]="person.address" name="document">
+        </div>
+      </div>
+  
+      <div class="mb-3 row">
+        <button (click)="save()" class="save">Salvar</button>
+        <button (click)="close()">Fechar</button>
+      </div>
+    </div>
+  </form>
+</div>

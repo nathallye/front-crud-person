@@ -50,11 +50,12 @@ export class PersonListComponent {
     this.router.navigate([`create`]);
   }
   
-  /*
-  editPerson(id: number) {
-
+ 
+  update(id: number) {
+    this.router.navigate([`update/${id}`]);
   }
 
+  /*
   removePerson(id: number) {
 
   }

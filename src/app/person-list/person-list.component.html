@@ -29,6 +29,7 @@
           <td>{{personItem.email}}</td>
           <td>{{personItem.address}}</td>
           <td>
+            <i (click)="update(personItem.id)" class="material-icons">edit</i>
             <i (click)="getOne(personItem.id)" class="material-icons">visibility</i>
           </td>
         </tr>
@@ -36,18 +37,6 @@
     </table>
   </div>
 </div>
-
-    <!--
-      <div class="input-group-prepend">
-        <input type="text" placeholder="Adicionar tarefa" name="task" #task
-          [(ngModel)]="namePersonModel" maxlength="30"
-          class="form-control">
-        <span (click)="addPerson(task.value)" class="input-group-text">
-          <i class="material-icons">add</i>
-        </span>
-      </div>
-    -->
-
     <!--
     <div class="data">
       <ul class="list-unstyled">
