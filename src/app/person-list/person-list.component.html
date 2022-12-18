@@ -2,7 +2,7 @@
   <form #formPerson="ngForm">
     <div class="form-group">
       <h1 class="text-center"></h1>
-      <div class="card" style="width: 100%;">
+      <div class="card">
 
         <div class="card-header bg-dark">
           <h4 class="card-title">Lista Pessoas</h4>
@@ -17,7 +17,7 @@
               <th>E-mail</th>
               <th>Endereço</th>
               <th></th>
-          </tr>
+            </tr>
           </thead>
         
           <tbody>
@@ -27,6 +27,9 @@
               <td>{{personItem.cpf}}</td>
               <td>{{personItem.email}}</td>
               <td>{{personItem.address}}</td>
+              <td>
+                <i (click)="getOne(personItem.id)" class="material-icons">visibility</i>
+              </td>
             </tr>
           </tbody>
         </table>

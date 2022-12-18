@@ -42,7 +42,10 @@ export class PersonListComponent {
       });
   }
 
-
+  getOne(id: number) {
+    this.router.navigate([`GetOne/${id}`]);
+  }
+  
   /*
   editPerson(id: number) {
 

@@ -7,11 +7,13 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PersonListComponent } from './person-list';
+import { PersonDetailComponent } from './person-detail/person-detail.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    PersonListComponent
+    PersonListComponent,
+    PersonDetailComponent
   ],
   imports: [
     BrowserModule,

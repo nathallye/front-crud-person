@@ -34,9 +34,3 @@ div .card {
 .card tbody {
   font-family: "Raleway";
 }
-
-.card tbody tr td i {
-  float: right;
-  color: #888;
-  cursor: pointer;
-}

@@ -1,0 +1,35 @@
+<div>
+  <form>
+    <div class="form-group">
+      <h1 class="text-center"></h1>
+      <div class="card" style="width: 100%;">
+
+        <div class="card-header bg-dark">
+          <h4 class="card-title">Dados de {{person.name}} {{person.lastName}}</h4>
+        </div>
+
+        <table class="table table-hover">
+          <thead class="bg-secondary text-white">
+            <tr>
+              <th>Nome</th>
+              <th>Sobrenome</th>
+              <th>CPF</th>
+              <th>E-mail</th>
+              <th>Endereço</th>
+          </tr>
+          </thead>
+        
+          <tbody>
+            <tr>
+              <td>{{person.name}}</td>
+              <td>{{person.lastName}}</td>
+              <td>{{person.cpf}}</td>
+              <td>{{person.email}}</td>
+              <td>{{person.address}}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </form>
+</div>
