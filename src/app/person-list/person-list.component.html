@@ -1,0 +1,29 @@
+<div>
+  <form #formPerson="ngForm">
+    <div class="form-group">
+      <h1 class="text-center">Lista de Pessoa</h1>
+      <!--
+      <div class="input-group-prepend">
+        <input type="text" placeholder="Adicionar tarefa" name="task" #task
+          [(ngModel)]="namePersonModel" maxlength="30"
+          class="form-control">
+        <span (click)="addPerson(task.value)" class="input-group-text">
+          <i class="material-icons">add</i>
+        </span>
+      </div>
+      -->
+    </div>
+
+    <div class="data">
+      <ul class="list-unstyled">
+        <li *ngFor="let personItem of listPeople">{{personItem.name}}
+          <!--
+          <i (click)="removePerson(personItem.id)" class="material-icons">delete</i>
+          <i (click)="editPerson(personItem.id)" class="material-icons">edit</i>
+          <i (click)="detailPerson(personItem.id)" class="material-icons">visibility</i>
+          -->
+        </li>
+      </ul>
+    </div>
+  </form>
+</div>
