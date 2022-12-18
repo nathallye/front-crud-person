@@ -3,6 +3,21 @@ body {
   margin: 0;
 }
 
+div p button {
+  background-color: rgba(53, 93, 138, 0.849);
+
+  float: right;
+
+  width: 5em;
+  height: 2em;
+  border: none;
+  border-radius: 0.5em;
+
+  color: #f4f4f4;
+
+  cursor: pointer;
+}
+
 div .card {
   background: #f4f4f4;
 

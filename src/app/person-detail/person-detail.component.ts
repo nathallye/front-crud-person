@@ -11,8 +11,6 @@ import { IPersonDto } from '../interfaces/IPersonDto';
 })
 
 export class PersonDetailComponent {
-  @Input() closeDetail!: () => void;
-
   person!: IPersonDto;
   idReceived!: number;
 
@@ -42,6 +40,6 @@ export class PersonDetailComponent {
   }
 
   close() {
-    this.closeDetail();
+    this.router.navigate([`list`]);
   }
 }

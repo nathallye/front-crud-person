@@ -1,40 +1,41 @@
 <div>
-  <form #formPerson="ngForm">
-    <div class="form-group">
-      <h1 class="text-center"></h1>
-      <div class="card">
+  <div class="card">
 
-        <div class="card-header bg-dark">
-          <h4 class="card-title">Lista Pessoas</h4>
-        </div>
+    <p>
+      <button (click)="create()">Criar</button>
+    </p>
 
-        <table class="table table-hover">
-          <thead class="bg-secondary text-white">
-            <tr>
-              <th>Nome</th>
-              <th>Sobrenome</th>
-              <th>CPF</th>
-              <th>E-mail</th>
-              <th>Endereço</th>
-              <th></th>
-            </tr>
-          </thead>
-        
-          <tbody>
-            <tr *ngFor="let personItem of listPeople">
-              <td>{{personItem.name}}</td>
-              <td>{{personItem.lastName}}</td>
-              <td>{{personItem.cpf}}</td>
-              <td>{{personItem.email}}</td>
-              <td>{{personItem.address}}</td>
-              <td>
-                <i (click)="getOne(personItem.id)" class="material-icons">visibility</i>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
+    <div class="card-header bg-dark">
+      <h4 class="card-title">Lista Pessoas</h4>
     </div>
+
+    <table class="table table-hover">
+      <thead class="bg-secondary text-white">
+        <tr>
+          <th>Nome</th>
+          <th>Sobrenome</th>
+          <th>CPF</th>
+          <th>E-mail</th>
+          <th>Endereço</th>
+          <th></th>
+        </tr>
+      </thead>
+    
+      <tbody>
+        <tr *ngFor="let personItem of listPeople">
+          <td>{{personItem.name}}</td>
+          <td>{{personItem.lastName}}</td>
+          <td>{{personItem.cpf}}</td>
+          <td>{{personItem.email}}</td>
+          <td>{{personItem.address}}</td>
+          <td>
+            <i (click)="getOne(personItem.id)" class="material-icons">visibility</i>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
 
     <!--
       <div class="input-group-prepend">
@@ -60,5 +61,3 @@
       </ul>
     </div>
     -->
-  </form>
-</div>

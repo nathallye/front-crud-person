@@ -32,3 +32,16 @@ div .card {
 .card tbody {
   font-family: "Raleway";
 }
+
+div p button {
+  background-color: #6c757d;
+
+  width: 5em;
+  height: 2em;
+  border: none;
+  border-radius: 0.5em;
+
+  color: #f4f4f4;
+
+  cursor: pointer;
+}

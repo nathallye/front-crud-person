@@ -45,6 +45,10 @@ export class PersonListComponent {
   getOne(id: number) {
     this.router.navigate([`detail/${id}`]);
   }
+
+  create() {
+    this.router.navigate([`create`]);
+  }
   
   /*
   editPerson(id: number) {
