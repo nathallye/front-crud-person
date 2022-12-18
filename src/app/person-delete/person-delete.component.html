@@ -1,0 +1,37 @@
+<div class="detail-group">
+  <div class="container">
+  
+    <div class="title">
+      <h4>Excluir Pessoa</h4>
+      <h4 class="text-danger">Tem certeza de que deseja excluir?</h4> 
+    </div>
+  
+    <div class="detail">
+      <dl>
+        <dt>Nome: </dt>
+        <dd>{{person.name}}</dd>
+      </dl>
+      <dl>
+        <dt>Sobrenome:</dt>
+        <dd>{{person.lastName}}</dd>
+      </dl>
+      <dl>
+        <dt>CPF:</dt>
+        <dd>{{person.cpf}}</dd>
+      </dl>
+      <dl>
+        <dt>E-mail:</dt>
+        <dd>{{person.email}}</dd>
+      </dl>
+      <dl>
+        <dt>Endereço:</dt>
+        <dd>{{person.address}}</dd>
+      </dl>
+    </div>
+   
+    <div class="mb-3 row">
+      <button (click)="exclude()" class="exclude">Excluir</button>
+      <button (click)="close()">Fechar</button>
+    </div>
+  </div>
+</div>

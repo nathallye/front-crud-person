@@ -55,13 +55,7 @@ export class PersonListComponent {
     this.router.navigate([`update/${id}`]);
   }
 
-  /*
-  removePerson(id: number) {
-
+  delete(id: number) {
+    this.router.navigate([`delete/${id}`]);
   }
-
-  submitFormPerson(valueForm: any) {
-
-  }
-  */
 }

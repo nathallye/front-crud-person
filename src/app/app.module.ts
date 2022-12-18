@@ -11,6 +11,7 @@ import { PersonDetailComponent } from './person-detail/person-detail.component';
 import { HeaderComponent } from './header';
 import { PersonCreateComponent } from './person-create/person-create.component';
 import { PersonEditComponent } from './person-edit/person-edit.component';
+import { PersonDeleteComponent } from './person-delete/person-delete.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { PersonEditComponent } from './person-edit/person-edit.component';
     PersonDetailComponent,
     HeaderComponent,
     PersonCreateComponent,
-    PersonEditComponent
+    PersonEditComponent,
+    PersonDeleteComponent
   ],
   imports: [
     BrowserModule,

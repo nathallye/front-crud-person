@@ -29,6 +29,7 @@
           <td>{{personItem.email}}</td>
           <td>{{personItem.address}}</td>
           <td>
+            <i (click)="delete(personItem.id)" class="material-icons">delete</i>
             <i (click)="update(personItem.id)" class="material-icons">edit</i>
             <i (click)="getOne(personItem.id)" class="material-icons">visibility</i>
           </td>
@@ -37,16 +38,3 @@
     </table>
   </div>
 </div>
-    <!--
-    <div class="data">
-      <ul class="list-unstyled">
-        <li *ngFor="let personItem of listPeople">{{personItem.name}}
-          
-          <i (click)="removePerson(personItem.id)" class="material-icons">delete</i>
-          <i (click)="editPerson(personItem.id)" class="material-icons">edit</i>
-          <i (click)="detailPerson(personItem.id)" class="material-icons">visibility</i>
-
-        </li>
-      </ul>
-    </div>
-    -->
