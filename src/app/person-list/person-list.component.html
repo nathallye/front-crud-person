@@ -1,8 +1,39 @@
 <div>
   <form #formPerson="ngForm">
     <div class="form-group">
-      <h1 class="text-center">Lista de Pessoa</h1>
-      <!--
+      <h1 class="text-center"></h1>
+      <div class="card" style="width: 100%;">
+
+        <div class="card-header bg-dark">
+          <h4 class="card-title">Lista Pessoas</h4>
+        </div>
+
+        <table class="table table-hover">
+          <thead class="bg-secondary text-white">
+            <tr>
+              <th>Nome</th>
+              <th>Sobrenome</th>
+              <th>CPF</th>
+              <th>E-mail</th>
+              <th>Endereço</th>
+              <th></th>
+          </tr>
+          </thead>
+        
+          <tbody>
+            <tr *ngFor="let personItem of listPeople">
+              <td>{{personItem.name}}</td>
+              <td>{{personItem.lastName}}</td>
+              <td>{{personItem.cpf}}</td>
+              <td>{{personItem.email}}</td>
+              <td>{{personItem.address}}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!--
       <div class="input-group-prepend">
         <input type="text" placeholder="Adicionar tarefa" name="task" #task
           [(ngModel)]="namePersonModel" maxlength="30"
@@ -11,19 +42,20 @@
           <i class="material-icons">add</i>
         </span>
       </div>
-      -->
-    </div>
+    -->
 
+    <!--
     <div class="data">
       <ul class="list-unstyled">
         <li *ngFor="let personItem of listPeople">{{personItem.name}}
-          <!--
+          
           <i (click)="removePerson(personItem.id)" class="material-icons">delete</i>
           <i (click)="editPerson(personItem.id)" class="material-icons">edit</i>
           <i (click)="detailPerson(personItem.id)" class="material-icons">visibility</i>
-          -->
+
         </li>
       </ul>
     </div>
+    -->
   </form>
 </div>
